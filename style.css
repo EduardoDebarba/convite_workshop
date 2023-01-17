@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+#conteudo {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  color: white;
+  background-color: #9ebde6;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+main {
+  background-image: url(./images/background.jpeg);
+  background-size: cover;
+  height: 487px;
+  padding: 20px;
+}
+
+#formulario {
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 300px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.5);
+  float: right;
+}
+
+.pad {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#botton:hover {
+  cursor: pointer;
+}
+
+#botton {
+  background-color: #9ebde6;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(42, 42, 42);
+  display: inline-block;
+}
+
+#foto-footer {
+  width: 300px;
+  float: left;
+  border-radius: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  padding-left: 350px;
+  padding-top: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+@media (max-width: 450px) {
+  main {
+    background-image: url(./images/lecture.jpeg);
+    background-size: cover;
+    height: 487px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    margin: 0;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  #foto-footer {
+    width: 65vw;
+    margin-top: 15px;
+  }
+
+  .description {
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3.description {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    margin: 0;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  #foto-footer {
+    width: 40vw;
+    margin-top: 15px;
+  }
+
+  .description {
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3.description {
+    margin-bottom: 15px;
+  }
+
+  .ft {
+    padding: 25px;
+  }
+}
